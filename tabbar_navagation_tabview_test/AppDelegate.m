@@ -22,6 +22,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window.rootViewController = tabBarController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyWindow];
     
     return YES;

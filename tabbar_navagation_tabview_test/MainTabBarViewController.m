@@ -10,6 +10,8 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "UpTabbarViewController.h"
+#import "DTScrollStatusHeader.h"
 
 @interface MainTabBarViewController ()
 
@@ -22,7 +24,9 @@
     // Do any additional setup after loading the view.
     FirstViewController *firstVc = [[FirstViewController alloc] init];
     UINavigationController *firstNc = [[UINavigationController alloc] initWithRootViewController:firstVc];
-    firstNc.view.backgroundColor = [UIColor grayColor];
+    firstNc.navigationBar.translucent = NO;
+    firstNc.navigationBar.tintColor = [UIColor whiteColor];
+    firstNc.navigationBar.barTintColor = DTColor(10, 193, 147, 1);
     UITabBarItem *firstTabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
     firstNc.tabBarItem = firstTabBarItem;
     
